@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  background-image: url(../image/nasi2.jpeg);
+  background-position: center;
+  background-size: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url(../image/nasi20.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url(../image/nasi31.jpeg);
+    background-position: center;
+    background-size: auto;
+  }
+}
+
+
+.PearMenu {
+  font-size: 20px;
+  display: flex;
+  margin-top: 5px;
+  padding: 10px 0 0 0;
+  border-top: solid 2px black;
+  font-weight: bold;
+}
+
+
+.index {
+  width: 960px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  margin: 10px 0px;
+  border-top: solid 2px black;
+  border-bottom: solid 1px black;
+  
+}
+
+.title {
+  margin-right: auto;
+  padding-left: 10px;
+}
+
+.top {
+  margin-left: auto;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.main_index {
+  text-align: center;
+  margin-bottom: 100px;
+  white-space: nowrap;
+}
+
+.main_index h1 {
+  font-size: 45px;
+}
+
+.main_index h2 {
+  font-size: 30px;
+}
+
+.box {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  padding: 0 5px;
+  background-color: rgba(32, 235, 120, 0.1);
+  border-radius: 10px;
+}
+
+.box a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+}
+
+/* アイコン */
+.follow-me {
+  list-style: none;
+  margin: 60px 0 45px;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+}
+.follow-me li {
+  /* float: center; */
+  display: inline;
+  margin: 0 8px 8px 0;
+  padding: 0;
+}
+.follow-me li a::before {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  color: #25292b;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 16px;
+  height: 30px; /* Button height */
+  line-height: 30px; /* Button height */
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  text-align: center;
+  width: 30px; /* Button width */
+}
+.follow-me li a:hover::before {
+  opacity: 0.7;
+}
+
+.follow-me li a[href*="facebook.com"]::before       { background-color: #fff; content: "\f09a"; }
+.follow-me li a[href*="twitter.com"]::before        { background-color: #fff; content: "\f099"; }
+.follow-me li a[href*="plus.google.com"]::before    { background-color: #fff; content: "\f0d5"; }
+.follow-me li a[href*="youtube.com"]::before        { background-color: #fff; content: "\f16a"; }
+/* ここまで */
+
+/* Shop */
+.nasi_main{
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nasi_main h1 {
+  color: darkolivegreen;
+}
+
+.nasi_shop {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.nasi_price {
+  display: flex;
+  margin: 30px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nasi_price li {
+  list-style: none;
+}
+
+.nasi_price ul {
+  margin: 20px auto;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0 5px;
+  background-color: rgba(32, 235, 120, 0.2);
+  border-radius: 10px;
+}
+
+.nasi_price img {
+  width: 215px;
+  height: 180px;
+  margin-right: 15px;
+}
+
+
+/* フォト画面 */
+.scale-img {
+  width: 250px; 
+  height: 175px; 
+  transition-duration: 0.5s; 
+  margin: 10px auto;
+  border: 4px solid white;
+}
+
+.scale-img:hover {
+  transform: scale(1.4,1.4); 
+  cursor: pointer; 
+}
+
+.photo_price {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+/* ここまで */
+
+.contact_shop {
+  margin: 40px 50px;
+}
+
+/* お問い合わせ */
+.contact_box {
+  display: flex;
+  margin: 10px auto;
+}
+
+.contact_text {
+  width: 25%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact_box input {
+  font: normal 18px/140%  sans-serif;
+  cursor: pointer;
+}
+/* ここまで */
+
+/* メンバーページ */
+.member_name {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.member_name li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 10px;
+}
+
+.member-img {
+  width: 350px; 
+  height: 245px; 
+  transition-duration: 0.5s; 
+  margin: 10px auto;
+  border: 4px solid white;
+}
+/* ここまで */
+
+/* お客様の声 */
+.review_shop h2 {
+  text-align: center;
+}
+
+.review_meny {
+  background-color: rgba(32, 235, 120, 0.845);
+  border-radius: 10px;
+  width: 600px;
+  min-height: 100px;
+  margin: 10px auto;
+  border: black solid 1px;
+}
+
+.review_name {
+  border-bottom: black;
+  padding-left: 20px;
+  border-bottom: black solid 1px;
+}
+
+.review_comment {
+  margin-left: 30px;
+  margin-top: 5px;
+  
+}
+/* ここまで */
