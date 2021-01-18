@@ -16,4 +16,38 @@
     btn.textContent = results[n];
     text.textContent = results2[n];
   });
+
 }
+$(function(){
+  //アンカースクロール
+  $('#top-btn').click(function(){
+    $('html,body').animate({ 
+      'scrollTop': 0 
+    }, 'slow');
+  });
+  
+  $('#box a').click(function(){
+    var id = $(this).attr('href');
+    var position = $(id).offset().top;
+    $('html, body').animate({
+      'scrollTop': position
+    },500);
+  });
+//写真ポップアップ
+  $(window).on("load", function () {
+    $(".scale-img").on("click", function () {
+      var elm = $($(this).parent()).find(".default"), tmp = $(this).attr("src");
+      elm.addClass("active");
+      elm.removeClass("default");
+      elm.find("img").attr("src", tmp)
+    });
+    $('.in_design').click(function(){
+      var elm = $($(this).parent()).find(".active"), tmp = $(this).attr("src");
+      elm.addClass("default");
+      elm.removeClass("active");
+      elm.find("img").attr("src", tmp)
+    });
+  });
+
+
+});
